@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buggy_Lab - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+            color: rgb(255, 255, 255);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(30, 30, 47, 0.9);
+            padding: 10px 20px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            font-family: 'Press Start 2P', cursive;
+            height: 100vh;
+            background: url('images/Buggy_lab_homepage.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: rgb(255, 255, 6);
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgb(0, 0, 0);
+
+            margin-top: 15px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .about {
+            background: #252545;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-out;
+        }
+
+        .about h2 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .apps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .app-card {
+            background: #3a3a5e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .app-card:hover {
+            transform: scale(1.05);
+        }
+
+        .app-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .mail-section {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .mail-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .mail-section input, .mail-section textarea, .mail-section button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .mail-section button {
+            background: #ffcc00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .mail-section button:hover {
+            background: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e2f;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BUGGY_LAB</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#apps">Published Apps</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to BUGGY_LAB</h2>
+        <p> Driven by dreams, coding for fun, creating for all </p>
+    </div>
+
+    <section id="about">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>At BUGGY_LAB, I bring creative ideas to life through coding. As a passionate gamer and aspiring developer, I focus on making fun and innovative apps and games that spark joy and curiosity.</p>
+            <p>Even though I'm just starting my journey as a developer, my dedication to learning and exploring new possibilities drives me. My goal is to create engaging experiences that entertain and open new doors in the gaming world.</p>
+            <p>With a vision to blend creativity and technology, I'm committed to building memorable apps and games. Welcome to BUGGY_LAB, where ideas come to life.</p>
+        </div>
+    </section>
+
+    <section id="apps">
+        <h2 style="text-align: center; color: #ffcc00;">Published Apps</h2>
+        <div class="apps">
+            <div class="app-card">
+                <img src="images/playstore.png" alt="App Image">
+                <h3>BLINKLE</h3>
+                <p>A fun flashlight app with blink features.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.blinkle.app&pcampaignid=web_share" style="color: #ffcc00; text-decoration: none; font-weight: bold;">View on Play Store</a>
+            </div>
+            <div class="app-card">
+                <img src="images/timerlogo.png" alt="App Image">
+                <h3>Study timer app</h3>
+                <p>A clean app to add countdown time for topics useful for studies.</p>
+                <a href="#" style="color: #ffcc00; text-decoration: none; font-weight: bold;">soon on Play Store</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Mail Me</h2>
+        <div class="mail-section">
+            <form action="mailto:buggylab01@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BUGGY_LAB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
