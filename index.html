@@ -157,6 +157,55 @@
             from { transform: translateY(50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+
+         /* Media Queries for Responsiveness */
+         @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .about {
+                padding: 20px;
+            }
+
+            .app-card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.8rem;
+            }
+
+            header h1 {
+                font-size: 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                margin: 5px;
+            }
+        }
+
     </style>
 </head>
 <body>
